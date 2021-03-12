@@ -73,6 +73,7 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: SFProDisplay;
+  scroll-behavior: smooth;
 }
 input,
 button,
@@ -488,6 +489,7 @@ header {
 
 .block__2 {
   background: #fbfffb;
+  padding: 30px 0px 10px 0px;
 }
 
 .block__2__content {
@@ -769,4 +771,124 @@ header {
 .slider__item img {
   width: 100%;
   object-fit: cover;
+}
+
+.block__5 {
+  background: url(../img/block__5/back__img.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 240px 0px 50px 0px;
+}
+
+.block__5__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block__5__block {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  padding: 45px 35px 40px 50px;
+  margin: 0px 20px;
+  position: relative;
+  @media (max-width: 520px) {
+    padding: 40px 20px;
+  }
+  @media (max-width: 480px) {
+    padding: 40px 30px;
+  }
+  &::before {
+    content: url(../img/block__5/woman.svg);
+    position: absolute;
+    top: -184px;
+    left: 22%;
+    @media (max-width: 480px) {
+      left: -8%;
+    }
+  }
+}
+
+.block__5__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  color: #59aa33;
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+}
+.block__5__block__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 25px;
+  column-gap: 40px;
+  justify-self: center;
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+.block__5__items {
+  display: flex;
+  align-items: center;
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000000;
+  }
+  &:nth-child(4) {
+    .img {
+      margin: 0px 13px 0px 3px;
+    }
+  }
+  .img {
+    margin: 0px 10px 0px 0px;
+  }
+}
+
+footer {
+  padding: 40px 0px;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 15px;
+  row-gap: 15px;
+  padding: 0px 15px;
+  @media (max-width: 420px) {
+    grid-template-columns: 1fr;
+  }
+}
+.footer__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 100%;
+  color: #000000;
+  &:nth-child(2) {
+    text-align: center;
+  }
+  &:nth-child(3) {
+    text-align: end;
+    a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 100%;
+      color: #000000;
+      span {
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+  @media (max-width: 420px) {
+    text-align: center !important;
+  }
 }
